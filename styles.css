@@ -167,3 +167,106 @@ img {
         width: 100%;  /* Na mobilních zařízeních budou obrázky zabírat celou šířku */
     }
 }
+/* Obecné styly pro stránku */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigace */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hlavní obsah */
+main {
+    padding: 20px;
+}
+
+/* Nadpis */
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Sekce pro každý druh holuba */
+.pigeon {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.pigeon h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Obrázky holubů */
+.pigeon-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto; /* Zarovnání do středu s mezerou pod obrázkem */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobilní zařízení (media query pro mobilní verze) */
+@media (max-width: 768px) {
+    .pigeon {
+        padding: 15px;
+    }
+
+    .pigeon h2 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
