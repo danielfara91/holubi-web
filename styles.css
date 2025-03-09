@@ -116,3 +116,24 @@ footer p {
         font-size: 0.8em;
     }
 }
+/* Obrázky ve všech sekcích */
+img {
+    max-width: 100%;  /* Obrázky se přizpůsobí šířce rodičovského elementu */
+    height: auto;  /* Zachováme poměr stran obrázku */
+    display: block;  /* Eliminujeme mezery pod obrázkem */
+    margin: 20px auto;  /* Nastavení odsazení pro lepší vzhled */
+    border-radius: 8px; /* Zaoblení rohů obrázků */
+}
+
+/* Styly pro obrázky v sekcích, které mají třídu "image" */
+.image {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Přidání stínu pro lepší vzhled */
+    border: 4px solid #4CAF50; /* Rámeček okolo obrázku, stejný odstín zelené jako v hlavičce */
+}
+
+/* Přizpůsobení pro mobilní zařízení */
+@media (max-width: 768px) {
+    .image {
+        width: 100%;  /* Obrázky na mobilu budou mít šířku 100% obrazovky */
+    }
+}
